@@ -9,22 +9,22 @@
 // This line of code creates a variable to hold your faccate picture
 // You will use it later.
 PImage cat;
-int x=0;
-int y=0;
+int x=295;
+int y=240;
 
 void setup() {
   
 // 2. The code below loads your cat picture into the program. 
 //     Make sure the file name is correct for the cat image you saved earlier
-cat = loadImage("cat.jpg");
+cat = loadImage("cat.jpeg");
   
 // 3. Set the size of the sketch. Make it big enough to show the cat you chose.
-
+size(670,400);
 // 4. Resize the cat so it is the same size as the sketch
-
+cat.resize(670,400);
 // 5. DRAW CAT.    Use the background() command to make the cat the background of the sketch
 //    Run the program to see if the cat is drawn. Get this working before you go on.
- 
+ background(cat);
 
   }
 
@@ -51,7 +51,7 @@ void draw() {
 // 10 Use the ellipse() command to draw a circle on the eye (you will have to guess its size). 
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
-                ellipse(x, y, width, height);
+                ellipse(295, 240, 52, 60);
 // Run the program to make sure it is in the right place and is the right size.
 }
 
