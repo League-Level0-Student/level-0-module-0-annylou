@@ -55,8 +55,8 @@ JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "
 				dragonHealth = dragonHealth-playerAttack;
 			// THE DRAGON RETALIATES
 
-				// 7. Find a random number between 0 and 35 and store it in dragonAttack
-				dragonAttack = ran.nextInt(35);
+				// 7. Find a random number between 0 and 30 and store it in dragonAttack
+				dragonAttack = ran.nextInt(30);
 				// 8. Subtract the dragon attack value from the player's health
 				playerHealth = playerHealth-dragonAttack;
 			// ASSESS THE DAMAGE
@@ -87,14 +87,14 @@ JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "
 
 	static void playerLost() {
 		// 11. Tell the player that they have been defeated by the dragon and have no treasure
-		JOptionPane.showMessageDialog(null, "you lost and have no treasure");
+		JOptionPane.showMessageDialog(null, "you lose and have no treasure");
 
 		System.exit(0);   //This code ends the program
 	}
 
 	static void dragonLost() {
 		// 12. Tell the user that the dragon has been defeated and they get a ton of gold!
-		JOptionPane.showMessageDialog(null, "you won and get a ton of gold");
+		JOptionPane.showMessageDialog(null, "you win and get a bunch of gold");
 		
 		System.exit(0);   //This code ends the program
 	}
