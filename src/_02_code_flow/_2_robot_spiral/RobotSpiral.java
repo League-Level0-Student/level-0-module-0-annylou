@@ -33,9 +33,9 @@ rob.turn(360/7);
 count +=1;
 			// Change the robot pen width to the current value of the count variable 
 rob.setPenWidth(count);
-}
-		//  End the while loop here
 
+		//  End the while loop here
+	}
 		
 		// Run the program. 
 		// Check the pattern against the picture in the recipe. If it matches, you are done!
