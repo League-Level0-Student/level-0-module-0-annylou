@@ -43,9 +43,9 @@ batman.setY(roboty);
 			// Call the drawStar() method with your star size variable
 drawStar(starsize);
 			// Increase the value of the X position variable by star size. See Figure 2
-
+robotx += starsize;
 			// decrease the value of the Y position variable by star size. See Figure 3
-
+roboty -= starsize;
 			// Increase the star size by 20
 starsize+=20;
 			// Turn the robot 12 degrees

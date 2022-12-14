@@ -43,19 +43,19 @@ void draw() {
 // 3. DRAW BACKGROUND    
 //    Use the background() command to draw where the race is taking place.
 //    You can use the image provided (space), or change it to something else.
-  
+  background(space);
   
 // 4. DRAW the RACERS
 //    You can use the cat and dog images for the racers or change them to something else.
 //    Use the image() command to draw each of the two racers.
-
+image(cat, racer1X, racer1Y);
 //    RACER 1
 //    Put the first image (cat) at location racer1X, racer1Y
   
   
 //    RACER 2
 //    Draw the second image (dog) at location racer2X, racer2Y
-
+image(dog, racer2X, racer2Y);
 
 // 3. WINNER  
 //    Find the checkForWinner() method. The messages and sounds are set for a cat and dog.
@@ -95,22 +95,22 @@ void moveRacer2(){
 }
 
 void checkForWinner(){
-  if (catX>width-60){
+  if (racer1X>width-60){
     text("CATS ARE THE BEST", 400, 50); 
     if (canPlaySounds) {
         meow = new SoundFile(this, "meow.wav");
-	      meow.play();
-	  }
+        meow.play();
+    }
     noLoop();
-    	
+      
   }
   
-  if (dogX>width-60){
+  if (racer2X>width-60){
     text("DOGS RULE", 500, 50); 
     if (canPlaySounds) {
-		   woof = new SoundFile(this, "woof.wav");
-	     woof.play();
-	  } 
+       woof = new SoundFile(this, "woof.wav");
+       woof.play();
+    } 
     noLoop();
   }
 }
